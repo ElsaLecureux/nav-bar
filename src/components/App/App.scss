@@ -1,8 +1,9 @@
 .App{
-  
+  width: 100vw;
+  height: 100vh;
   .navBar_container {
+    padding: 0 3rem;
     border-bottom: solid 1px #dadce0;
-    padding: 0 4rem;
     display: flex;
     justify-content: space-between;
     .title_container{
@@ -33,6 +34,10 @@
       .list-icon_container{
         display: flex;
         align-items: center;
+        .list_item {
+          background-color: #ffffff;
+          border: none;
+        }
       }
     }
   }

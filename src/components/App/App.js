@@ -1,7 +1,7 @@
 import './App.scss';
 import  googleFonts_logo from './googleLogo.png';
 
-//TODO changer les liens des icones en buttons, ajouter :hover pour le thème
+//TODO ajouter :hover pour le thème, changer les margin et padding des icones, diviser en composants, réfler le soucis de :hover des links
 function App() {
   return (
     <div className="App">
@@ -18,9 +18,9 @@ function App() {
           <li><a className="list_item faq_link" href="*">FAQ</a></li>
         </ul>
         <ul className="list-icon_container">
-          <li><a className="list_item infos_link" href="*"><span class="material-symbols-outlined">more_vert</span></a></li>
-          <li><a className="list_item theme_link" href="*"><span class="material-symbols-outlined">brightness_4</span></a></li>
-          <li><a className="list_item cart_link" href="*"><span class="material-symbols-outlined">dashboard_customize</span></a></li>
+          <li><button class="list_item infos_button material-symbols-outlined">more_vert</button></li>
+          <li><button class="list_item theme_button material-symbols-outlined">brightness_4</button></li>
+          <li><button class="list_item cart_button material-symbols-outlined">dashboard_customize</button></li>
         </ul>
     </div>
       </nav>
