@@ -1,5 +1,6 @@
 import './App.scss';
 import  googleFonts_logo from './googleLogo.png';
+import { NavLink } from 'react-router-dom';
 
 //TODO ajouter :hover pour le thème, changer les margin et padding des icones, diviser en composants, réfler le soucis de :hover des links
 function App() {
@@ -12,10 +13,10 @@ function App() {
         </div>
         <div className="lists_container">
         <ul className="list-name_container">
-          <li><a className="list_item fonts_link" href="*">Fonts</a></li>
-          <li><a className="list_item icons_link" href="*">Icons</a></li>
-          <li><a className="list_item knowledge_link" href="*">Knowledge</a></li>
-          <li><a className="list_item faq_link" href="*">FAQ</a></li>
+          <li><NavLink className="list_item fonts_link" href="*">Fonts</NavLink></li>
+          <li><NavLink className="list_item icons_link" href="*">Icons</NavLink></li>
+          <li><NavLink className="list_item knowledge_link" href="*">Knowledge</NavLink></li>
+          <li><NavLink className="list_item faq_link" href="*">FAQ</NavLink></li>
         </ul>
         <ul className="list-icon_container">
           <li><button class="list_item infos_button material-symbols-outlined">more_vert</button></li>
